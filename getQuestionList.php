@@ -1,4 +1,6 @@
 <?php
+	require 'check_apikey.php'; 
+	
 	include("connect.php");
 
 	$dataInfo = array("totalCount" => 0,"totalPage" =>0,"questions"=> null);

@@ -1,5 +1,5 @@
-
 #逼乎API文档
+Haruue 修改后的 know_web 没有可供测试的服务器。    
 
 ###规则
 1. 所有接口POST，参数 x-www-form-urlencoded模式，返回json
@@ -14,7 +14,7 @@
 
 
 ###1. 注册
-地址：http://redrock.alien95.cn/know/register.php
+地址：register.php
 参数：
 
 >name:  
@@ -27,7 +27,7 @@
 	}
 
 ###2. 登录
-地址：http://redrock.alien95.cn/know/login.php
+地址：login.php
 参数
 
 >name:  
@@ -46,7 +46,7 @@
 返回用户信息及token
 
 ###3. 修改头像
-地址：http://redrock.alien95.cn/know/modifyFace.php
+地址：modifyFace.php
 参数
 
 >token:  
@@ -61,7 +61,7 @@
 	}
 
 ###4. 取问题列表
-地址：http://redrock.alien95.cn/know/getQuestionList.php
+地址：getQuestionList.php
 参数
 
 >page:  
@@ -141,7 +141,7 @@
 recent表示最近回复时间。没有回复时为null。
 
 ###5. 取回答列表
-地址：http://redrock.alien95.cn/know/getAnswerList.php
+地址：getAnswerList.php
 参数：
 
 >page:  
@@ -176,7 +176,7 @@ recent表示最近回复时间。没有回复时为null。
 	}
 
 ###6. 发布问题
-地址：http://redrock.alien95.cn/know/question.php
+地址：question.php
 参数：
 
 >title:  
@@ -190,7 +190,7 @@ recent表示最近回复时间。没有回复时为null。
 	}
 
 ###7. 发布回答
-地址：http://redrock.alien95.cn/know/answer.php
+地址：answer.php
 参数：
 
 >questionId:  

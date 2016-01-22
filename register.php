@@ -1,4 +1,6 @@
 <?php
+ require 'check_apikey.php'; 
+
  include("connect.php" );
 
  $name = addslashes($_POST["name"]);
@@ -14,7 +16,7 @@
  		header("http/1.1 400 Bad Request");
  		$result["error"] =  $name." 已被使用";
  	}else{
-		$query = "INSERT INTO person ( name , password ) VALUES ( '".$name."' , '".$password."' )";
+		$query = "INSERT INTO person ( name , password ) VALUES ( '".$name."' , '".md5(md5($password))."' )";
 		 if (mysql_query($query)) {
 		 	$result["info"] =  $query;
 		 }else{

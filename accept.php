@@ -1,4 +1,6 @@
 <?php
+ require 'check_apikey.php'; 
+
  include("connect.php" );
  include("token.php");
 

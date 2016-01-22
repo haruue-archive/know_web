@@ -6,3 +6,14 @@
 
 ###[API](https://github.com/Jude95/know_web/blob/master/api.md)
 ###[数据库结构](https://github.com/Jude95/know_web/blob/master/sql.sql)
+
+## Haruue 的一点点小修改    
++ 增加并没有什么卵用的 APIKEY 认证功能，被熊孩子调用时返回 404 页面。     
++ 两次 md5 之后再保存密码。    
+
++ [API](https://github.com/haruue/know_web/blob/master/api.md)    
++ [数据库结构](https://github.com/haruue/know_web/blob/master/sql.sql)    
+
+### 其他说明    
++ 数据库配置文件 connect.php    
++ APIKEY 配置文件 check_apikey.php    

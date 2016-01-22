@@ -35,7 +35,7 @@ DROP TABLE IF EXISTS `person`;
 CREATE TABLE `person` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(16) NOT NULL,
-  `password` varchar(16) NOT NULL,
+  `password` varchar(32) NOT NULL,
   `face` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
