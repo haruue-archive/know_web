@@ -10,6 +10,7 @@
 ## Haruue 的一点点小修改    
 + 增加并没有什么卵用的 APIKEY 认证功能，被熊孩子调用时返回 404 页面。     
 + 两次 md5 之后再保存密码。    
++ 旧 token 登陆。    
 
 + [API](https://github.com/haruue/know_web/blob/master/api.md)    
 + [数据库结构](https://github.com/haruue/know_web/blob/master/sql.sql)    

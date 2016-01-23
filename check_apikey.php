@@ -6,11 +6,15 @@ $apikey = 'demoapikey';
 $page404 = '../404.php';
 
 if (empty($_POST['apikey'])) {
+	header('HTTP/1.1 404 Not Found');
+    header("status: 404 Not Found");
 	include $page404;
 	exit;
 }
 
 if ($_POST['apikey'] != $apikey) {
+	header('HTTP/1.1 404 Not Found');
+    header("status: 404 Not Found");
 	include $page404;
 	exit;
 }

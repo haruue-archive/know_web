@@ -8,6 +8,7 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 	+ 200 —— 成功
 	+ 400 —— 参数错误
 	+ 401 —— 用户认证错误
+    + 404 —— apikey 认证错误
 
 3. 为方便开发学习，info输出sql语句
 4. 登录后用token代表用户。
@@ -18,7 +19,8 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 参数：
 
 >name:  
->password:
+>password:    
+>apikey:
 
 返回：
 
@@ -31,7 +33,8 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 参数
 
 >name:  
->password:
+>password:    
+>apikey:
 
 返回：
 
@@ -50,7 +53,8 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 参数
 
 >token:  
->face:
+>face:    
+>apikey:
 
 传用户头像地址。本API不负责图片文件储存，图片储存请右转阿里，七牛。把图片地址穿上来。
 
@@ -65,7 +69,8 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 参数
 
 >page:  
->count:可空，每页条数，默认20条。
+>count:可空，每页条数，默认20条。    
+>apikey:    
 
 返回
 
@@ -147,7 +152,9 @@ recent表示最近回复时间。没有回复时为null。
 >page:  
 >questionId:  
 >count:可空，每页条数，默认20条。  
->desc:可空，是否倒序，填true 或 false
+>desc:可空，是否倒序，填true 或 false    
+>apikey:
+
 
 返回：
 
@@ -181,7 +188,8 @@ recent表示最近回复时间。没有回复时为null。
 
 >title:  
 >content:  
->token:
+>token:    
+>apikey:
 
 返回：
 
@@ -195,10 +203,29 @@ recent表示最近回复时间。没有回复时为null。
 
 >questionId:  
 >content:  
->token
+>token:    
+>apikey:
 
 返回：
 
 	{
 	    "info": "INSERT INTO answer ( authorId , questionId , content , date ) VALUES ( '34' , '13','hehe',now())",
 	}
+
+###8. 旧 token 登陆
+以旧的 token 登陆并更新服务器上的 token      
+地址：loginWithOldToken.php    
+参数：
+
+>token:    
+>apikey:
+
+返回：（与登陆类似）
+    
+    {
+            "id": "50",
+            "name": "jimm",
+            "face": null,
+            "password": "33",
+            "token": "501343d0d2a14eb67885ee4f8c2ef31d95fb8859"
+    }
