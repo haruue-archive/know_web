@@ -25,7 +25,7 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 返回：
 
 	{
-	    "info": "INSERT INTO person ( name , password ) VALUES ( 'jimm' , '33' )",
+	    "info": "INSERT INTO person ( name , password ) VALUES ( 'jimm' , '33' )"
 	}
 
 ###2. 登录
@@ -61,7 +61,7 @@ Haruue 修改后的 know_web 没有可供测试的服务器。
 返回
 
 	{
-	    "info": "UPDATE person SET face = 33333 WHERE id = 50",
+	    "info": "UPDATE person SET face = 33333 WHERE id = 50"
 	}
 
 ###4. 取问题列表
@@ -178,7 +178,7 @@ recent表示最近回复时间。没有回复时为null。
 	                "authorName": "zhs",
 	                "authorFace": null
 	            }
-	        ]
+	        ],
 	         "curPage": "0"
 	}
 
@@ -194,7 +194,7 @@ recent表示最近回复时间。没有回复时为null。
 返回：
 
 	{
-	    "info": "INSERT INTO question ( authorId , title , content , date ) \n\tVALUES ( '19' , '这是标题','这是描述',now())",
+	    "info": "INSERT INTO question ( authorId , title , content , date ) \n\tVALUES ( '19' , '这是标题','这是描述',now())"
 	}
 
 ###7. 发布回答
@@ -209,7 +209,7 @@ recent表示最近回复时间。没有回复时为null。
 返回：
 
 	{
-	    "info": "INSERT INTO answer ( authorId , questionId , content , date ) VALUES ( '34' , '13','hehe',now())",
+	    "info": "INSERT INTO answer ( authorId , questionId , content , date ) VALUES ( '34' , '13','hehe',now())"
 	}
 
 ###8. 旧 token 登陆
