@@ -229,3 +229,28 @@ recent表示最近回复时间。没有回复时为null。
             "password": "33",
             "token": "501343d0d2a14eb67885ee4f8c2ef31d95fb8859"
     }
+
+###9. 上传图片
+上传图片，自动压缩和存储    
+地址：image_manager/uploadImage.php    
+参数：    
+
+>image: 要上传的图片的二进制流    
+>use: 用途。 face 或 normal ，影响图片压缩率    
+>apikey:    
+
+返回：    
+
+    {
+        "server":"http:\/\/example.com\/know_web\/image_manager\/getImage.php",
+        "file":"face_b4481dd9da0cca3c598082fff29a2349.png",
+        "url":"http:\/\/example.com\/know_web\/image_manager\/getImage.php?file=face_b4481dd9da0cca3c598082fff29a2349.png"
+    }
+
+###10. 取得图片
+取得上传过的图片，不需要 APIKEY ，直接 GET 即可    
+地址：image_manager/getImage.php    
+方法：GET    
+参数：    
+
+>file: uploadImage.php 返回的文件名
