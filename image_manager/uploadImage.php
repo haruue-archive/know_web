@@ -67,5 +67,5 @@
     $response['server'] = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . 'getImage.php';
     $response['file'] = $filename . $filetype;
     $response['url'] = $response['server'] . '?file=' . $response['file'];
-    echo json_encode($response);
+    echo str_replace("\\/", "/", json_encode($response));
 ?>
