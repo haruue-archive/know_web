@@ -242,9 +242,9 @@ recent表示最近回复时间。没有回复时为null。
 返回：    
 
     {
-        "server":"http:\/\/example.com\/know_web\/image_manager\/getImage.php",
+        "server":"http://example.com/know_web/image_manager/getImage.php",
         "file":"face_b4481dd9da0cca3c598082fff29a2349.png",
-        "url":"http:\/\/example.com\/know_web\/image_manager\/getImage.php?file=face_b4481dd9da0cca3c598082fff29a2349.png"
+        "url":"http://example.com/know_web/image_manager/getImage.php?file=face_b4481dd9da0cca3c598082fff29a2349.png"
     }
 
 ###10. 取得图片
